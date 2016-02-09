@@ -24,6 +24,7 @@ header {
     vertical-align: middle;
     padding-top: 0;
 }
+
 header h1 {
     color: rgba(251,157,5,.5);
     text-transform: uppercase;
@@ -44,7 +45,7 @@ header nav {
 header a {
     padding:0 0.5em;
     font-size: 1.6em;
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: middle;
     color: #7c7c7c;
     text-decoration: none;
@@ -129,13 +130,29 @@ header a:hover {
     -webkit-transform:scale(.75);
 }
 
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 550px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    header h1 {
+        font-size: 3em;
+        line-height: 3;
+    }
+}
+
+/* --------------------------------------------
+ * Dynamically resizing navbar
+ * -------------------------------------------- */
+
 #dynamicCollapse.collapsed .navbar-header {
     float: none;
 }
 
-#dynamicCollapse.collapsed .navbar-toggle {
-    display: block;
+#dynamicCollapse.collapsed .navbar-header .navbar-toggle {
+    display: inline;
     float: right;
+    vertical-align: baseline;
 }
 
 .collapsed>.navbar-content.collapsed {
