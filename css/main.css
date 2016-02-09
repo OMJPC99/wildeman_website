@@ -194,7 +194,6 @@ _________________________________*/
 
 
 .courses article p {
-	margin: 0 0 1em;
 	font-weight:400;
 
 	padding-top: 5px;
@@ -221,7 +220,21 @@ _________________________________*/
 	padding-bottom: 0;
 }
 
-.courses article p a{
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 550px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .courses article .p:first-of-type:first-letter {
+        font-size: 12em;
+        margin-top: .4em;
+        margin-right: 0px;
+        margin-bottom: .1em;
+    }
+}
+
+
+
+    .courses article p a{
 	text-decoration: none;
 }
 /*.courses article p:before{

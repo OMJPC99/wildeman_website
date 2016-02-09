@@ -8,8 +8,8 @@
 
     <!-- Base Styles -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
     <!-- Crazy Animations for Pictures -->
     <link rel="stylesheet" type="text/css" href="css/animations.css">
@@ -23,15 +23,22 @@
 <body>
 
 <header class='group'>
-    <div class="inner" id="#dynamicCollapse">
-        <img src=""/>
-        <h1 class='left name'>bwildeman.com</h1>
-        <nav class="right">
-            <a href="#" class="left">acknowledge</a>
-            <a href="#" class="left">contact</a>
-            <a href="#" class="left">bio</a>
-            <a href="#">share</a>
-        </nav>
+    <div class="inner navbar collapsed" id="#dynamicCollapse">
+        <div class="navbar-header">
+            <img src=""/>
+            <h1 class='left name'>bwildeman.com</h1>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-content">
+                <span class="sr-only">NAV</span>-
+            </button>
+        </div>
+        <div class="navbar-content">
+            <ul class="right navbar-nav">
+                <li><a href="#" class="left">acknowledge</a></li>
+                <li><a href="#" class="left">contact</a></li>
+                <li><a href="#" class="left">bio</a></li>
+                <li><a href="#">share</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 

@@ -128,3 +128,29 @@ header a:hover {
     transfrom:scale(.75);
     -webkit-transform:scale(.75);
 }
+
+#dynamicCollapse.collapsed .navbar-header {
+    float: none;
+}
+
+#dynamicCollapse.collapsed .navbar-toggle {
+    display: block;
+    float: right;
+}
+
+.collapsed>.navbar-content.collapsed {
+    display: none!important;
+}
+
+#dynamicCollapse.collapsed .navbar-nav.collapsed {
+    float: none!important;
+}
+
+#dynamicCollapse.collapsed .navbar-nav>li {
+    float: none;
+}
+
+#dynamicCollapse.collapsed .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
