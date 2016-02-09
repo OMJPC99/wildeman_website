@@ -1,0 +1,31 @@
+.courses article .circle:hover #AT{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: rotatez(345deg) scale(1.15);
+    -moz-transform: rotatez(345deg) scale(1.15);
+    -webkit-transform: rotatez(360deg) rotatey(-360deg) scale(1.15);
+    box-shadow: 0 0 10px 0px #0091D5, 0 0 35px 5px rgba(9, 250, 14, 1);
+
+
+}
+.courses article .circle:hover #D{
+    transform: rotatez(-360deg) scale(.75);
+    -moz-transform: rotatez(-360deg) scale(.75);
+    -webkit-transform: rotatez(-360deg) scale(.75);
+    box-shadow: 0 0 30px 5px red, 0 0 65px 15px yellow;
+
+}
+.courses article .circle:hover #A{
+    transform: rotatex(360deg) scale(1.15);
+    -moz-transform: rotatex(360deg) scale(1.15);
+    -webkit-transform: rotatex(360deg) scale(1.15);
+    box-shadow: 0 0 10px 0px #0091D5, 0 0 35px 5px rgba(9, 250, 14, 1);						}
+.courses article .circle:hover #S{
+    transform: rotatey(-720deg) scale(.75);
+    -moz-transform: rotatey(-760deg) scale(.75);
+    -webkit-transform: rotatey(-360deg) scale(.75);
+    box-shadow: 0 0 30px 5px red, 0 0 65px 15px yellow;
+}
